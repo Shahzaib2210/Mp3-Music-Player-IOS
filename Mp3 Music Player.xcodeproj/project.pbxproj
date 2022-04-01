@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA183F3927F6D57600349111 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA183F3827F6D57600349111 /* MusicPlayerViewController.swift */; };
+		EA3AD9D327DB273500AFC9A8 /* MusicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3AD9D227DB273500AFC9A8 /* MusicListTableViewCell.swift */; };
+		EA3AD9D527DB2DD400AFC9A8 /* Rakha Porsche Te Bentley Di Jodi Remix _ Bass Boosted _ AP Dhillon _ New Punjabi Remix Song 2021(MP3_128K).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA3AD9D427DB2DD400AFC9A8 /* Rakha Porsche Te Bentley Di Jodi Remix _ Bass Boosted _ AP Dhillon _ New Punjabi Remix Song 2021(MP3_128K).mp3 */; };
+		EA3AD9D727DB2DDF00AFC9A8 /* Rafta Rafta (Lyrics) Atif Aslam Ft. Sajal Al _ Tarish Music(MP3_128K).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA3AD9D627DB2DDF00AFC9A8 /* Rafta Rafta (Lyrics) Atif Aslam Ft. Sajal Al _ Tarish Music(MP3_128K).mp3 */; };
+		EAEB5AB927DB098E0082EB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB5AB827DB098E0082EB4E /* AppDelegate.swift */; };
+		EAEB5ABB27DB098E0082EB4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB5ABA27DB098E0082EB4E /* SceneDelegate.swift */; };
+		EAEB5ABD27DB098E0082EB4E /* MusicPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB5ABC27DB098E0082EB4E /* MusicPlaylistViewController.swift */; };
+		EAEB5AC027DB098E0082EB4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEB5ABE27DB098E0082EB4E /* Main.storyboard */; };
+		EAEB5AC227DB09920082EB4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEB5AC127DB09920082EB4E /* Assets.xcassets */; };
+		EAEB5AC527DB09920082EB4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEB5AC327DB09920082EB4E /* LaunchScreen.storyboard */; };
+		EAEB5AD027DB09920082EB4E /* Mp3_Music_PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB5ACF27DB09920082EB4E /* Mp3_Music_PlayerTests.swift */; };
+		EAEB5ADB27DB09920082EB4E /* Mp3_Music_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB5ADA27DB09920082EB4E /* Mp3_Music_PlayerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAEB5ACC27DB09920082EB4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAEB5AAD27DB098E0082EB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAEB5AB427DB098E0082EB4E;
+			remoteInfo = "Mp3 Music Player";
+		};
+		EAEB5AD727DB09920082EB4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAEB5AAD27DB098E0082EB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAEB5AB427DB098E0082EB4E;
+			remoteInfo = "Mp3 Music Player";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA183F3827F6D57600349111 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		EA3AD9D227DB273500AFC9A8 /* MusicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewCell.swift; sourceTree = "<group>"; };
+		EA3AD9D427DB2DD400AFC9A8 /* Rakha Porsche Te Bentley Di Jodi Remix _ Bass Boosted _ AP Dhillon _ New Punjabi Remix Song 2021(MP3_128K).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rakha Porsche Te Bentley Di Jodi Remix _ Bass Boosted _ AP Dhillon _ New Punjabi Remix Song 2021(MP3_128K).mp3"; sourceTree = "<group>"; };
+		EA3AD9D627DB2DDF00AFC9A8 /* Rafta Rafta (Lyrics) Atif Aslam Ft. Sajal Al _ Tarish Music(MP3_128K).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rafta Rafta (Lyrics) Atif Aslam Ft. Sajal Al _ Tarish Music(MP3_128K).mp3"; sourceTree = "<group>"; };
+		EAEB5AB527DB098E0082EB4E /* Mp3 Music Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mp3 Music Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEB5AB827DB098E0082EB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAEB5ABA27DB098E0082EB4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EAEB5ABC27DB098E0082EB4E /* MusicPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlaylistViewController.swift; sourceTree = "<group>"; };
+		EAEB5ABF27DB098E0082EB4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAEB5AC127DB09920082EB4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAEB5AC427DB09920082EB4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAEB5AC627DB09920082EB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAEB5ACB27DB09920082EB4E /* Mp3 Music PlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mp3 Music PlayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEB5ACF27DB09920082EB4E /* Mp3_Music_PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mp3_Music_PlayerTests.swift; sourceTree = "<group>"; };
+		EAEB5AD127DB09920082EB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAEB5AD627DB09920082EB4E /* Mp3 Music PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mp3 Music PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEB5ADA27DB09920082EB4E /* Mp3_Music_PlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mp3_Music_PlayerUITests.swift; sourceTree = "<group>"; };
+		EAEB5ADC27DB09920082EB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAEB5AB227DB098E0082EB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEB5AC827DB09920082EB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEB5AD327DB09920082EB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA3AD9CB27DB24EE00AFC9A8 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				EA3AD9D427DB2DD400AFC9A8 /* Rakha Porsche Te Bentley Di Jodi Remix _ Bass Boosted _ AP Dhillon _ New Punjabi Remix Song 2021(MP3_128K).mp3 */,
+				EA3AD9D627DB2DDF00AFC9A8 /* Rafta Rafta (Lyrics) Atif Aslam Ft. Sajal Al _ Tarish Music(MP3_128K).mp3 */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		EA3AD9CC27DB24F700AFC9A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAEB5ABC27DB098E0082EB4E /* MusicPlaylistViewController.swift */,
+				EA183F3827F6D57600349111 /* MusicPlayerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA3AD9CD27DB250200AFC9A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA3AD9CF27DB253100AFC9A8 /* Storyboards */,
+				EAEB5AC127DB09920082EB4E /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA3AD9CE27DB251100AFC9A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAEB5AB827DB098E0082EB4E /* AppDelegate.swift */,
+				EAEB5ABA27DB098E0082EB4E /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA3AD9CF27DB253100AFC9A8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EAEB5ABE27DB098E0082EB4E /* Main.storyboard */,
+				EAEB5AC327DB09920082EB4E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EA3AD9D027DB26FE00AFC9A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA3AD9D127DB270E00AFC9A8 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EA3AD9D227DB273500AFC9A8 /* MusicListTableViewCell.swift */,
+			);
+			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		EAEB5AAC27DB098E0082EB4E = {
+			isa = PBXGroup;
+			children = (
+				EAEB5AB727DB098E0082EB4E /* Mp3 Music Player */,
+				EAEB5ACE27DB09920082EB4E /* Mp3 Music PlayerTests */,
+				EAEB5AD927DB09920082EB4E /* Mp3 Music PlayerUITests */,
+				EAEB5AB627DB098E0082EB4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAEB5AB627DB098E0082EB4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAEB5AB527DB098E0082EB4E /* Mp3 Music Player.app */,
+				EAEB5ACB27DB09920082EB4E /* Mp3 Music PlayerTests.xctest */,
+				EAEB5AD627DB09920082EB4E /* Mp3 Music PlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAEB5AB727DB098E0082EB4E /* Mp3 Music Player */ = {
+			isa = PBXGroup;
+			children = (
+				EA3AD9CE27DB251100AFC9A8 /* Resources */,
+				EA3AD9D027DB26FE00AFC9A8 /* Models */,
+				EA3AD9CD27DB250200AFC9A8 /* Views */,
+				EA3AD9CC27DB24F700AFC9A8 /* Controllers */,
+				EA3AD9D127DB270E00AFC9A8 /* Table View Cell */,
+				EA3AD9CB27DB24EE00AFC9A8 /* Songs */,
+				EAEB5AC627DB09920082EB4E /* Info.plist */,
+			);
+			path = "Mp3 Music Player";
+			sourceTree = "<group>";
+		};
+		EAEB5ACE27DB09920082EB4E /* Mp3 Music PlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAEB5ACF27DB09920082EB4E /* Mp3_Music_PlayerTests.swift */,
+				EAEB5AD127DB09920082EB4E /* Info.plist */,
+			);
+			path = "Mp3 Music PlayerTests";
+			sourceTree = "<group>";
+		};
+		EAEB5AD927DB09920082EB4E /* Mp3 Music PlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAEB5ADA27DB09920082EB4E /* Mp3_Music_PlayerUITests.swift */,
+				EAEB5ADC27DB09920082EB4E /* Info.plist */,
+			);
+			path = "Mp3 Music PlayerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAEB5AB427DB098E0082EB4E /* Mp3 Music Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAEB5ADF27DB09920082EB4E /* Build configuration list for PBXNativeTarget "Mp3 Music Player" */;
+			buildPhases = (
+				EAEB5AB127DB098E0082EB4E /* Sources */,
+				EAEB5AB227DB098E0082EB4E /* Frameworks */,
+				EAEB5AB327DB098E0082EB4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mp3 Music Player";
+			productName = "Mp3 Music Player";
+			productReference = EAEB5AB527DB098E0082EB4E /* Mp3 Music Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAEB5ACA27DB09920082EB4E /* Mp3 Music PlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAEB5AE227DB09920082EB4E /* Build configuration list for PBXNativeTarget "Mp3 Music PlayerTests" */;
+			buildPhases = (
+				EAEB5AC727DB09920082EB4E /* Sources */,
+				EAEB5AC827DB09920082EB4E /* Frameworks */,
+				EAEB5AC927DB09920082EB4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAEB5ACD27DB09920082EB4E /* PBXTargetDependency */,
+			);
+			name = "Mp3 Music PlayerTests";
+			productName = "Mp3 Music PlayerTests";
+			productReference = EAEB5ACB27DB09920082EB4E /* Mp3 Music PlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAEB5AD527DB09920082EB4E /* Mp3 Music PlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAEB5AE527DB09920082EB4E /* Build configuration list for PBXNativeTarget "Mp3 Music PlayerUITests" */;
+			buildPhases = (
+				EAEB5AD227DB09920082EB4E /* Sources */,
+				EAEB5AD327DB09920082EB4E /* Frameworks */,
+				EAEB5AD427DB09920082EB4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAEB5AD827DB09920082EB4E /* PBXTargetDependency */,
+			);
+			name = "Mp3 Music PlayerUITests";
+			productName = "Mp3 Music PlayerUITests";
+			productReference = EAEB5AD627DB09920082EB4E /* Mp3 Music PlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAEB5AAD27DB098E0082EB4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Shahzaib;
+				TargetAttributes = {
+					EAEB5AB427DB098E0082EB4E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					EAEB5ACA27DB09920082EB4E = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = EAEB5AB427DB098E0082EB4E;
+					};
+					EAEB5AD527DB09920082EB4E = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = EAEB5AB427DB098E0082EB4E;
+					};
+				};
+			};
+			buildConfigurationList = EAEB5AB027DB098E0082EB4E /* Build configuration list for PBXProject "Mp3 Music Player" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAEB5AAC27DB098E0082EB4E;
+			productRefGroup = EAEB5AB627DB098E0082EB4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAEB5AB427DB098E0082EB4E /* Mp3 Music Player */,
+				EAEB5ACA27DB09920082EB4E /* Mp3 Music PlayerTests */,
+				EAEB5AD527DB09920082EB4E /* Mp3 Music PlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAEB5AB327DB098E0082EB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3AD9D527DB2DD400AFC9A8 /* Rakha Porsche Te Bentley Di Jodi Remix _ Bass Boosted _ AP Dhillon _ New Punjabi Remix Song 2021(MP3_128K).mp3 in Resources */,
+				EAEB5AC527DB09920082EB4E /* LaunchScreen.storyboard in Resources */,
+				EAEB5AC227DB09920082EB4E /* Assets.xcassets in Resources */,
+				EAEB5AC027DB098E0082EB4E /* Main.storyboard in Resources */,
+				EA3AD9D727DB2DDF00AFC9A8 /* Rafta Rafta (Lyrics) Atif Aslam Ft. Sajal Al _ Tarish Music(MP3_128K).mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEB5AC927DB09920082EB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEB5AD427DB09920082EB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAEB5AB127DB098E0082EB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEB5ABD27DB098E0082EB4E /* MusicPlaylistViewController.swift in Sources */,
+				EA183F3927F6D57600349111 /* MusicPlayerViewController.swift in Sources */,
+				EAEB5AB927DB098E0082EB4E /* AppDelegate.swift in Sources */,
+				EAEB5ABB27DB098E0082EB4E /* SceneDelegate.swift in Sources */,
+				EA3AD9D327DB273500AFC9A8 /* MusicListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEB5AC727DB09920082EB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEB5AD027DB09920082EB4E /* Mp3_Music_PlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEB5AD227DB09920082EB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEB5ADB27DB09920082EB4E /* Mp3_Music_PlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAEB5ACD27DB09920082EB4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAEB5AB427DB098E0082EB4E /* Mp3 Music Player */;
+			targetProxy = EAEB5ACC27DB09920082EB4E /* PBXContainerItemProxy */;
+		};
+		EAEB5AD827DB09920082EB4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAEB5AB427DB098E0082EB4E /* Mp3 Music Player */;
+			targetProxy = EAEB5AD727DB09920082EB4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAEB5ABE27DB098E0082EB4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAEB5ABF27DB098E0082EB4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAEB5AC327DB09920082EB4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAEB5AC427DB09920082EB4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAEB5ADD27DB09920082EB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAEB5ADE27DB09920082EB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAEB5AE027DB09920082EB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLYB895GUV;
+				INFOPLIST_FILE = "Mp3 Music Player/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shahzaib.Mp3-Music-Player";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAEB5AE127DB09920082EB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLYB895GUV;
+				INFOPLIST_FILE = "Mp3 Music Player/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shahzaib.Mp3-Music-Player";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAEB5AE327DB09920082EB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLYB895GUV;
+				INFOPLIST_FILE = "Mp3 Music PlayerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shahzaib.Mp3-Music-PlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mp3 Music Player.app/Mp3 Music Player";
+			};
+			name = Debug;
+		};
+		EAEB5AE427DB09920082EB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLYB895GUV;
+				INFOPLIST_FILE = "Mp3 Music PlayerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shahzaib.Mp3-Music-PlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mp3 Music Player.app/Mp3 Music Player";
+			};
+			name = Release;
+		};
+		EAEB5AE627DB09920082EB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLYB895GUV;
+				INFOPLIST_FILE = "Mp3 Music PlayerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shahzaib.Mp3-Music-PlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mp3 Music Player";
+			};
+			name = Debug;
+		};
+		EAEB5AE727DB09920082EB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLYB895GUV;
+				INFOPLIST_FILE = "Mp3 Music PlayerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shahzaib.Mp3-Music-PlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mp3 Music Player";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAEB5AB027DB098E0082EB4E /* Build configuration list for PBXProject "Mp3 Music Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAEB5ADD27DB09920082EB4E /* Debug */,
+				EAEB5ADE27DB09920082EB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAEB5ADF27DB09920082EB4E /* Build configuration list for PBXNativeTarget "Mp3 Music Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAEB5AE027DB09920082EB4E /* Debug */,
+				EAEB5AE127DB09920082EB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAEB5AE227DB09920082EB4E /* Build configuration list for PBXNativeTarget "Mp3 Music PlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAEB5AE327DB09920082EB4E /* Debug */,
+				EAEB5AE427DB09920082EB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAEB5AE527DB09920082EB4E /* Build configuration list for PBXNativeTarget "Mp3 Music PlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAEB5AE627DB09920082EB4E /* Debug */,
+				EAEB5AE727DB09920082EB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAEB5AAD27DB098E0082EB4E /* Project object */;
+}

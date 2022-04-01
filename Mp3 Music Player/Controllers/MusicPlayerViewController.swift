@@ -47,20 +47,9 @@ class MusicPlayerViewController: UIViewController {
         audioPlayer.volume = 0.5
         audioPlay = false
         
+        songPlayProgress.progress = 0.0
+        
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
-        
-        progressBarTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateProgressView), userInfo: nil, repeats: true)
-    }
-    
-    @objc func updateProgressView() {
-        
-        songPlayProgress.progress += 0.1
-        songPlayProgress.setProgress(songPlayProgress.progress, animated: true)
-        
-        if(songPlayProgress.progress == Float(totalMusicProgress))
-        {
-            progressBarTimer.invalidate()
-        }
     }
     
     // method for update Music Play Time
@@ -69,7 +58,6 @@ class MusicPlayerViewController: UIViewController {
         if audioPlayer.isPlaying {
             
             currentTime += 1
-            songPlayProgress.progress = Float(currentTime)
             let original = Int(currentTime)
             let minutes = String(format: "%02d", (original % 3600) / 60)
             let hours = (original % 3600) % 60

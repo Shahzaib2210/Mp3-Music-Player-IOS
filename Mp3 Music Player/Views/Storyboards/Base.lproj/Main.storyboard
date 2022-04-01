@@ -129,7 +129,7 @@
                                 <color key="textColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="p0j-9G-5Hm">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="p0j-9G-5Hm">
                                 <rect key="frame" x="20" y="448.5" width="374" height="4"/>
                                 <color key="trackTintColor" systemColor="systemGray3Color"/>
                             </progressView>

@@ -37,9 +37,9 @@
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mp3" translatesAutoresizingMaskIntoConstraints="NO" id="kFK-rF-dD3">
                                                             <rect key="frame" x="8" y="10" width="31" height="30"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUb-MV-0rc">
-                                                            <rect key="frame" x="47" y="16" width="290" height="18"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Name" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUb-MV-0rc">
+                                                            <rect key="frame" x="47" y="3" width="290" height="44"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -56,8 +56,10 @@
                                                         <constraint firstItem="kFK-rF-dD3" firstAttribute="height" secondItem="d79-Uk-LD6" secondAttribute="height" multiplier="0.6" id="DL0-Gn-fS7"/>
                                                         <constraint firstAttribute="trailing" secondItem="WBg-1h-Nhs" secondAttribute="trailing" constant="8" id="DqW-hP-5R5"/>
                                                         <constraint firstItem="vUb-MV-0rc" firstAttribute="centerY" secondItem="d79-Uk-LD6" secondAttribute="centerY" id="GEn-xb-KAa"/>
+                                                        <constraint firstAttribute="bottom" secondItem="vUb-MV-0rc" secondAttribute="bottom" constant="3" id="O2f-tI-Jew"/>
                                                         <constraint firstItem="kFK-rF-dD3" firstAttribute="leading" secondItem="d79-Uk-LD6" secondAttribute="leading" constant="8" id="ODY-cn-hZw"/>
                                                         <constraint firstItem="vUb-MV-0rc" firstAttribute="leading" secondItem="kFK-rF-dD3" secondAttribute="trailing" constant="8" id="Uph-1X-xxP"/>
+                                                        <constraint firstItem="vUb-MV-0rc" firstAttribute="top" secondItem="d79-Uk-LD6" secondAttribute="top" constant="3" id="kEh-Cf-SOD"/>
                                                         <constraint firstItem="kFK-rF-dD3" firstAttribute="centerY" secondItem="d79-Uk-LD6" secondAttribute="centerY" id="kH8-d1-KaM"/>
                                                         <constraint firstItem="WBg-1h-Nhs" firstAttribute="centerY" secondItem="d79-Uk-LD6" secondAttribute="centerY" id="nwP-Ch-sAA"/>
                                                     </constraints>

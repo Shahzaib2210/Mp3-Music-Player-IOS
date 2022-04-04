@@ -36,6 +36,7 @@ class MusicPlayerViewController: UIViewController {
     }
     
     var progressBarTimer = Timer()
+    var SongProgressTimer  = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +51,16 @@ class MusicPlayerViewController: UIViewController {
         songPlayProgress.progress = 0.0
         
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        SongProgressTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateProgressBar), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateProgressBar() {
+    
+        if songPlayProgress.progress == Float(totalMusicProgress) {
+            SongProgressTimer.invalidate()
+        } else {
+            self.songPlayProgress.progress += 0.01
+        }
     }
     
     // method for update Music Play Time
@@ -75,13 +86,13 @@ class MusicPlayerViewController: UIViewController {
         if audioPlay
         {
             audioPlayer.play()
-            playPauseButton.setImage(UIImage(named: "pause.fill"), for: .normal)
+            playPauseButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             audioPlay = false
         }
         else
         {
             audioPlayer.pause()
-            playPauseButton.setImage(UIImage(named: "play.fill"), for: .normal)
+            playPauseButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
             audioPlay = true
         }
     }

@@ -19,8 +19,9 @@ class MusicListTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         MusicNameView.layer.borderWidth = 1
+        MusicNameView.layer.borderColor = UIColor(#colorLiteral(red: 155, green: 89, blue: 182, alpha: 1)).cgColor
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

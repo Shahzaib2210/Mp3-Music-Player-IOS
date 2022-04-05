@@ -136,14 +136,14 @@
                                 <color key="trackTintColor" systemColor="systemGray3Color"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9U-oD-UhT">
-                                <rect key="frame" x="20" y="460.5" width="39" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="20" y="460.5" width="40" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDw-gu-Uha">
-                                <rect key="frame" x="355" y="460.5" width="39" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="354" y="460.5" width="40" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -194,12 +194,19 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpD-sA-eHV">
+                                <rect key="frame" x="190.5" y="601.5" width="33.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kqv-1b-6g9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xd9-4Z-b33" firstAttribute="centerX" secondItem="Ld2-DY-r0E" secondAttribute="centerX" id="1Dz-6S-2EX"/>
                             <constraint firstItem="3Tu-Ax-tOc" firstAttribute="leading" secondItem="Kqv-1b-6g9" secondAttribute="leading" constant="20" id="1JV-WZ-bk5"/>
+                            <constraint firstItem="YpD-sA-eHV" firstAttribute="centerX" secondItem="Ld2-DY-r0E" secondAttribute="centerX" id="5rT-PO-Xf9"/>
                             <constraint firstItem="Q9U-oD-UhT" firstAttribute="leading" secondItem="Kqv-1b-6g9" secondAttribute="leading" constant="20" id="7Fh-VY-vHx"/>
                             <constraint firstItem="eZK-ww-Cuy" firstAttribute="centerX" secondItem="Ld2-DY-r0E" secondAttribute="centerX" id="Abe-gP-YNW"/>
                             <constraint firstItem="p0j-9G-5Hm" firstAttribute="top" secondItem="xd9-4Z-b33" secondAttribute="bottom" constant="30" id="C57-ux-4ii"/>
@@ -211,6 +218,7 @@
                             <constraint firstItem="PDw-gu-Uha" firstAttribute="top" secondItem="p0j-9G-5Hm" secondAttribute="bottom" constant="8" id="YxR-HF-y6N"/>
                             <constraint firstItem="xd9-4Z-b33" firstAttribute="width" secondItem="Ld2-DY-r0E" secondAttribute="width" multiplier="0.903382" id="fEc-vM-p2V"/>
                             <constraint firstItem="PDw-gu-Uha" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Q9U-oD-UhT" secondAttribute="trailing" constant="296" id="hcM-4Q-WS7"/>
+                            <constraint firstItem="YpD-sA-eHV" firstAttribute="top" secondItem="gg3-ks-0iX" secondAttribute="bottom" constant="8" id="j0b-zF-Hcq"/>
                             <constraint firstItem="Kqv-1b-6g9" firstAttribute="trailing" secondItem="PDw-gu-Uha" secondAttribute="trailing" constant="20" id="lJl-8v-yJN"/>
                             <constraint firstItem="X8V-Aa-T7j" firstAttribute="leading" secondItem="Kqv-1b-6g9" secondAttribute="leading" constant="20" id="p4R-cG-cWT"/>
                             <constraint firstItem="Kqv-1b-6g9" firstAttribute="trailing" secondItem="3Tu-Ax-tOc" secondAttribute="trailing" constant="20" id="pk2-QM-Kbi"/>
@@ -223,6 +231,7 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Xm9-Jv-Z7k"/>
                     <connections>
                         <outlet property="currentPlayTime" destination="Q9U-oD-UhT" id="AT3-o1-unY"/>
+                        <outlet property="muteSpeaker" destination="3MA-xE-Ors" id="Wsc-22-H9s"/>
                         <outlet property="nameLabel" destination="X8V-Aa-T7j" id="yLH-V8-Pak"/>
                         <outlet property="playPauseButton" destination="Nro-zx-Czy" id="JWf-8O-gtq"/>
                         <outlet property="seekBackward" destination="t6B-bE-QKe" id="d0k-bi-334"/>
@@ -230,6 +239,7 @@
                         <outlet property="songImage" destination="xd9-4Z-b33" id="6Kk-cE-HS5"/>
                         <outlet property="songPlayProgress" destination="p0j-9G-5Hm" id="FOT-4h-xph"/>
                         <outlet property="totalPlayTime" destination="PDw-gu-Uha" id="Jd0-hS-ceX"/>
+                        <outlet property="volumePercentage" destination="YpD-sA-eHV" id="NLN-qT-FiX"/>
                         <outlet property="volumeSlider" destination="gg3-ks-0iX" id="bqd-lF-z0C"/>
                     </connections>
                 </viewController>

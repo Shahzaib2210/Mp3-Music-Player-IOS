@@ -17,15 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bass" translatesAutoresizingMaskIntoConstraints="NO" id="mIt-0N-9kn">
-                                <rect key="frame" x="114" y="358.5" width="186" height="179"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bass" translatesAutoresizingMaskIntoConstraints="NO" id="mIt-0N-9kn">
+                                <rect key="frame" x="124" y="358.5" width="166" height="179"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mIt-0N-9kn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GSI-gF-rF4"/>
-                            <constraint firstItem="mIt-0N-9kn" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.45" id="IFM-FY-02J"/>
+                            <constraint firstItem="mIt-0N-9kn" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.4" id="IFM-FY-02J"/>
                             <constraint firstItem="mIt-0N-9kn" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.2" id="hll-49-aWv"/>
                             <constraint firstItem="mIt-0N-9kn" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wBh-gG-wHV"/>
                         </constraints>

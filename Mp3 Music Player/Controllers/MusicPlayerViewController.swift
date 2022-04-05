@@ -22,6 +22,8 @@ class MusicPlayerViewController: UIViewController {
     @IBOutlet weak var volumeSlider: UISlider!
     @IBOutlet weak var totalPlayTime: UILabel!
     @IBOutlet weak var currentPlayTime: UILabel!
+    @IBOutlet weak var volumePercentage: UILabel!
+    @IBOutlet weak var muteSpeaker: UIImageView!
     
     var audioPlayer = AVAudioPlayer()
     
@@ -30,18 +32,20 @@ class MusicPlayerViewController: UIViewController {
     var audioPlay = true
     var currentTime = 0
     var totalMusicProgress = 0
+    var totalProgress: Float = 0.0
     
     deinit {
         print("Deinit Method Called")
     }
     
-    var progressBarTimer = Timer()
+    var SongTimer = Timer()
     var SongProgressTimer  = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         nameLabel.text = name
+        volumePercentage.isHidden = true
         
         PlayingSong()
         audioPlayer.play()
@@ -50,22 +54,31 @@ class MusicPlayerViewController: UIViewController {
         
         songPlayProgress.progress = 0.0
         
-        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
-        SongProgressTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateProgressBar), userInfo: nil, repeats: true)
+        SongTimer = Timer.scheduledTimer(timeInterval: 1,
+                             target: self,
+                             selector: #selector(updateTime),
+                             userInfo: nil,
+                             repeats: true)
+        
+        SongProgressTimer = Timer.scheduledTimer(timeInterval: TimeInterval(totalProgress/100),
+                                                 target: self,
+                                                 selector: #selector(updateProgressBar),
+                                                 userInfo: nil,
+                                                 repeats: true)
     }
     
     @objc func updateProgressBar() {
-    
-        if songPlayProgress.progress == Float(totalMusicProgress) {
+        
+        if songPlayProgress.progress == 1.0 {
             SongProgressTimer.invalidate()
+            songPlayProgress.progress = 0.0
         } else {
             self.songPlayProgress.progress += 0.01
         }
     }
     
     // method for update Music Play Time
-    @objc func updateTime()
-    {
+    @objc func updateTime() {
         if audioPlayer.isPlaying {
             
             currentTime += 1
@@ -73,6 +86,9 @@ class MusicPlayerViewController: UIViewController {
             let minutes = String(format: "%02d", (original % 3600) / 60)
             let hours = (original % 3600) % 60
             currentPlayTime.text = "\(minutes):\(hours)"
+        } else {
+            SongTimer.invalidate()
+            currentPlayTime.text = "00:00"
         }
     }
     
@@ -83,14 +99,12 @@ class MusicPlayerViewController: UIViewController {
     }
     
     @IBAction func BtnPlayPauseButtonTapped(_ sender: UIButton) {
-        if audioPlay
-        {
+        if audioPlay {
             audioPlayer.play()
             playPauseButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             audioPlay = false
         }
-        else
-        {
+        else {
             audioPlayer.pause()
             playPauseButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
             audioPlay = true
@@ -106,6 +120,20 @@ class MusicPlayerViewController: UIViewController {
     @IBAction func VolumeSliderChanged(_ sender: UISlider) {
         let value = volumeSlider.value
         audioPlayer.volume = value
+        volumePercentage.text = "\(Int(value * 100))%"
+        
+        if sender.isTracking {
+            volumePercentage.isHidden = false
+            
+            if volumePercentage.text == "0%" {
+                muteSpeaker.image = UIImage(systemName: "speaker.slash")
+            } else {
+                muteSpeaker.image = UIImage(systemName: "volume.2")
+            }
+            
+        } else {
+            volumePercentage.isHidden = true
+        }
     }
 }
 
@@ -119,16 +147,15 @@ extension MusicPlayerViewController {
     }
     
     // Function to Play Song
-    func PlayingSong()
-    {
-        do
-        {
+    func PlayingSong() {
+        do {
             let audioPath = Bundle.main.path(forResource: name, ofType: ".mp3")!
             GetSongImage(fileURL: audioPath)
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath) as URL )
             let audioAsset = AVURLAsset.init(url: NSURL(fileURLWithPath: audioPath) as URL, options: nil)
             let duration = audioAsset.duration
             let durationInSeconds = CMTimeGetSeconds(duration)
+            totalProgress = Float(durationInSeconds)
             let original = Int(durationInSeconds)
             totalMusicProgress = original
             let minutes = (original % 3600) / 60
@@ -136,15 +163,13 @@ extension MusicPlayerViewController {
             
             totalPlayTime.text = "0\(minutes):\(hours)"
         }
-        catch
-        {
+        catch {
             print("Error")
         }
     }
     
     // Second into Minutes and hours
-    func secondsToHoursMinutesSeconds(_ seconds: Int) -> String
-    {
+    func secondsToHoursMinutesSeconds(_ seconds: Int) -> String {
         let second = seconds / 3600
         let minutes = (seconds % 3600) / 60
         let hours = (seconds % 3600) % 60
@@ -180,8 +205,7 @@ extension MusicPlayerViewController {
             }
             
             //   getting the thumbnail image associated with file
-            if metaDataItems.commonKey == .commonKeyArtwork
-            {
+            if metaDataItems.commonKey == .commonKeyArtwork {
                 let imageData = metaDataItems.value as! NSData
                 let image2: UIImage = UIImage(data: imageData as Data)!
                 songImage.image = image2

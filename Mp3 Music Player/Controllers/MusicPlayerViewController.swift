@@ -55,16 +55,27 @@ class MusicPlayerViewController: UIViewController {
         songPlayProgress.progress = 0.0
         
         SongTimer = Timer.scheduledTimer(timeInterval: 1,
-                             target: self,
-                             selector: #selector(updateTime),
-                             userInfo: nil,
-                             repeats: true)
+                                         target: self,
+                                         selector: #selector(updateTime),
+                                         userInfo: nil,
+                                         repeats: true)
         
         SongProgressTimer = Timer.scheduledTimer(timeInterval: TimeInterval(totalProgress/100),
                                                  target: self,
                                                  selector: #selector(updateProgressBar),
                                                  userInfo: nil,
                                                  repeats: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if self.isMovingFromParent {
+            
+            audioPlayer.stop()
+            SongTimer.invalidate()
+            SongProgressTimer.invalidate()
+        }
     }
     
     @objc func updateProgressBar() {
@@ -188,21 +199,21 @@ extension MusicPlayerViewController {
         //using the asset property to get the metadata of file
         for metaDataItems in asset.commonMetadata {
             
-            //  getting the title of the song
-            if metaDataItems.commonKey == .commonKeyTitle {
-                let titleData = metaDataItems.value as! NSString
-                let title = titleData.substring(to: 9)
-                let singerData = titleData.substring(from: 12)
-                let singer = (singerData as NSString).substring(to: 13)
-                print("title ---> \(title)")
-                print("singer ---> \(singer)")
-            }
-            
-            //getting the "Artist of the mp3 file"
-            if metaDataItems.commonKey == .commonKeyArtist {
-                let artistData = metaDataItems.value as! NSString
-                print("artist ---> \(artistData)")
-            }
+            //            //  getting the title of the song
+            //            if metaDataItems.commonKey == .commonKeyTitle {
+            //                let titleData = metaDataItems.value as! NSString
+            //                let title = titleData.substring(to: 9)
+            //                let singerData = titleData.substring(from: 12)
+            //                let singer = (singerData as NSString).substring(to: 13)
+            //                print("title ---> \(title)")
+            //                print("singer ---> \(singer)")
+            //            }
+            //
+            //            //getting the "Artist of the mp3 file"
+            //            if metaDataItems.commonKey == .commonKeyArtist {
+            //                let artistData = metaDataItems.value as! NSString
+            //                print("artist ---> \(artistData)")
+            //            }
             
             //   getting the thumbnail image associated with file
             if metaDataItems.commonKey == .commonKeyArtwork {

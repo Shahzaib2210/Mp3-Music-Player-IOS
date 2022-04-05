@@ -11,6 +11,12 @@
 		EA3AD9D327DB273500AFC9A8 /* MusicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3AD9D227DB273500AFC9A8 /* MusicListTableViewCell.swift */; };
 		EA3AD9D527DB2DD400AFC9A8 /* Rakha Porsche Te Bentley Di Jodi Remix _ Bass Boosted _ AP Dhillon _ New Punjabi Remix Song 2021(MP3_128K).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA3AD9D427DB2DD400AFC9A8 /* Rakha Porsche Te Bentley Di Jodi Remix _ Bass Boosted _ AP Dhillon _ New Punjabi Remix Song 2021(MP3_128K).mp3 */; };
 		EA3AD9D727DB2DDF00AFC9A8 /* Rafta Rafta (Lyrics) Atif Aslam Ft. Sajal Al _ Tarish Music(MP3_128K).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA3AD9D627DB2DDF00AFC9A8 /* Rafta Rafta (Lyrics) Atif Aslam Ft. Sajal Al _ Tarish Music(MP3_128K).mp3 */; };
+		EAB1349427FC2E78008615C8 /* Dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB1348E27FC2E77008615C8 /* Dark@2x.png */; };
+		EAB1349527FC2E78008615C8 /* Dark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB1348F27FC2E77008615C8 /* Dark@3x.png */; };
+		EAB1349627FC2E78008615C8 /* Light.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB1349027FC2E77008615C8 /* Light.png */; };
+		EAB1349727FC2E78008615C8 /* Light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB1349127FC2E77008615C8 /* Light@2x.png */; };
+		EAB1349827FC2E78008615C8 /* Light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB1349227FC2E77008615C8 /* Light@3x.png */; };
+		EAB1349927FC2E78008615C8 /* Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB1349327FC2E78008615C8 /* Dark.png */; };
 		EAEB5AB927DB098E0082EB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB5AB827DB098E0082EB4E /* AppDelegate.swift */; };
 		EAEB5ABB27DB098E0082EB4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB5ABA27DB098E0082EB4E /* SceneDelegate.swift */; };
 		EAEB5ABD27DB098E0082EB4E /* MusicPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB5ABC27DB098E0082EB4E /* MusicPlaylistViewController.swift */; };
@@ -43,6 +49,12 @@
 		EA3AD9D227DB273500AFC9A8 /* MusicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewCell.swift; sourceTree = "<group>"; };
 		EA3AD9D427DB2DD400AFC9A8 /* Rakha Porsche Te Bentley Di Jodi Remix _ Bass Boosted _ AP Dhillon _ New Punjabi Remix Song 2021(MP3_128K).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rakha Porsche Te Bentley Di Jodi Remix _ Bass Boosted _ AP Dhillon _ New Punjabi Remix Song 2021(MP3_128K).mp3"; sourceTree = "<group>"; };
 		EA3AD9D627DB2DDF00AFC9A8 /* Rafta Rafta (Lyrics) Atif Aslam Ft. Sajal Al _ Tarish Music(MP3_128K).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rafta Rafta (Lyrics) Atif Aslam Ft. Sajal Al _ Tarish Music(MP3_128K).mp3"; sourceTree = "<group>"; };
+		EAB1348E27FC2E77008615C8 /* Dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dark@2x.png"; sourceTree = "<group>"; };
+		EAB1348F27FC2E77008615C8 /* Dark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dark@3x.png"; sourceTree = "<group>"; };
+		EAB1349027FC2E77008615C8 /* Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light.png; sourceTree = "<group>"; };
+		EAB1349127FC2E77008615C8 /* Light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Light@2x.png"; sourceTree = "<group>"; };
+		EAB1349227FC2E77008615C8 /* Light@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Light@3x.png"; sourceTree = "<group>"; };
+		EAB1349327FC2E78008615C8 /* Dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dark.png; sourceTree = "<group>"; };
 		EAEB5AB527DB098E0082EB4E /* Mp3 Music Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mp3 Music Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEB5AB827DB098E0082EB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAEB5ABA27DB098E0082EB4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +156,19 @@
 			path = "Table View Cell";
 			sourceTree = "<group>";
 		};
+		EAB1348127FC2DE8008615C8 /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				EAB1349327FC2E78008615C8 /* Dark.png */,
+				EAB1348E27FC2E77008615C8 /* Dark@2x.png */,
+				EAB1348F27FC2E77008615C8 /* Dark@3x.png */,
+				EAB1349027FC2E77008615C8 /* Light.png */,
+				EAB1349127FC2E77008615C8 /* Light@2x.png */,
+				EAB1349227FC2E77008615C8 /* Light@3x.png */,
+			);
+			path = "App Icons";
+			sourceTree = "<group>";
+		};
 		EAEB5AAC27DB098E0082EB4E = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +192,7 @@
 		EAEB5AB727DB098E0082EB4E /* Mp3 Music Player */ = {
 			isa = PBXGroup;
 			children = (
+				EAB1348127FC2DE8008615C8 /* App Icons */,
 				EA3AD9CE27DB251100AFC9A8 /* Resources */,
 				EA3AD9D027DB26FE00AFC9A8 /* Models */,
 				EA3AD9CD27DB250200AFC9A8 /* Views */,
@@ -304,7 +330,13 @@
 				EAEB5AC527DB09920082EB4E /* LaunchScreen.storyboard in Resources */,
 				EAEB5AC227DB09920082EB4E /* Assets.xcassets in Resources */,
 				EAEB5AC027DB098E0082EB4E /* Main.storyboard in Resources */,
+				EAB1349627FC2E78008615C8 /* Light.png in Resources */,
+				EAB1349927FC2E78008615C8 /* Dark.png in Resources */,
+				EAB1349427FC2E78008615C8 /* Dark@2x.png in Resources */,
+				EAB1349827FC2E78008615C8 /* Light@3x.png in Resources */,
 				EA3AD9D727DB2DDF00AFC9A8 /* Rafta Rafta (Lyrics) Atif Aslam Ft. Sajal Al _ Tarish Music(MP3_128K).mp3 in Resources */,
+				EAB1349727FC2E78008615C8 /* Light@2x.png in Resources */,
+				EAB1349527FC2E78008615C8 /* Dark@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,7 +29,6 @@ class MusicPlaylistViewController: UIViewController {
         //     DispatchQueue.main.async {
         //         self.changeIcon(to: "Dark")
         //   }
-        
     }
     
     func GetSongs() {
@@ -82,9 +81,10 @@ extension MusicPlaylistViewController: UITableViewDelegate, UITableViewDataSourc
 extension MusicPlaylistViewController {
     
     func changeIcon(to name: String?) {
+        
         // Check if the app supports alternating icons
         guard UIApplication.shared.supportsAlternateIcons else {
-            return;
+            return
         }
         
         // Change the icon to a specific image with given name

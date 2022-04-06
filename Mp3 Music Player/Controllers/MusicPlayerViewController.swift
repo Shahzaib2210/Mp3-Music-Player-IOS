@@ -112,12 +112,20 @@ class MusicPlayerViewController: UIViewController {
     @IBAction func BtnPlayPauseButtonTapped(_ sender: UIButton) {
         if audioPlay {
             audioPlayer.play()
-            playPauseButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+            if #available(iOS 13.0, *) {
+                playPauseButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+            } else {
+                // Fallback on earlier versions
+            }
             audioPlay = false
         }
         else {
             audioPlayer.pause()
-            playPauseButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            if #available(iOS 13.0, *) {
+                playPauseButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            } else {
+                // Fallback on earlier versions
+            }
             audioPlay = true
         }
     }
@@ -137,9 +145,17 @@ class MusicPlayerViewController: UIViewController {
             volumePercentage.isHidden = false
             
             if volumePercentage.text == "0%" {
-                muteSpeaker.image = UIImage(systemName: "speaker.slash")
+                if #available(iOS 13.0, *) {
+                    muteSpeaker.image = UIImage(systemName: "speaker.slash")
+                } else {
+                    // Fallback on earlier versions
+                }
             } else {
-                muteSpeaker.image = UIImage(systemName: "volume.2")
+                if #available(iOS 13.0, *) {
+                    muteSpeaker.image = UIImage(systemName: "volume.2")
+                } else {
+                    // Fallback on earlier versions
+                }
             }
             
         } else {
